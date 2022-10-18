@@ -9,8 +9,8 @@
 
 # Ejercicio de secuencias numéricas
 
-# Pedir por consola dos números que representen el principio y fin de una
-# secuencia numérica.
+# Pedir por consola dos números que representen el principio y fin de una*
+# secuencia numérica*.
 # Realizar un bucle "for" que recorra esa secuencia armada con "range"
 # y calcule a sumatoria total de todos los números dentro de esa secuencia
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
@@ -20,6 +20,11 @@ inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
 
+for rango in range (inicio,fin+1):
+    sumatoria += rango
+    print("elemento =",rango,"sumatoria =",sumatoria)
+    
+print("El valor final de la suma final  es =", sumatoria)
 # for ... in range(....)
 
 # Imprimir el valor de la sumatoria
